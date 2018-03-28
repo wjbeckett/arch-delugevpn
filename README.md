@@ -141,9 +141,16 @@ If there are multiple ovpn files then please delete the ones you don't want to u
 User ID (PUID) and Group ID (PGID) can be found by issuing the following command for the user you want to run the container as:-
 
 `id <username>`
+
+___
+**Credits**
+[binbex](https://github.com/binhex) - arch-delugevpn contianer
+[mdhiggins](https://github.com/mdhiggins) - MP4Automator script
+
+
 ___
 If you appreciate my work, then please consider buying me a beer  :D
 
-[![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MM5E27UX6AUU4)
+[![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](paypal.me/wjbeckett)
 
-[Support forum](http://lime-technology.com/forum/index.php?topic=45812.0)
+
