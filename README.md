@@ -11,9 +11,10 @@ Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows
 
 **Build notes**
 
-Latest stable Deluge release from Arch Linux repo.
-Latest stable OpenVPN release from Arch Linux repo.
-Latest stable Privoxy release from Arch Linux repo.
+Latest stable Deluge release from Arch Linux repo.  
+Latest stable OpenVPN release from Arch Linux repo. 
+Latest stable Privoxy release from Arch Linux repo. 
+Latest version of MP4Automator will be pulled when started.
 
 **Usage**
 ```
@@ -57,6 +58,7 @@ Default password for the webui is "deluge"
 `http://<host ip>:8118`
 
 **MP4Automator configuration**
+
 Start and then stop the container so MP4Automator config files are generated and then follow the config instructions from https://github.com/mdhiggins/sickbeard_mp4_automator/blob/master/README.md
 
 
