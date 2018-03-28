@@ -32,7 +32,7 @@ ADD /run/init/update.sh /usr/bin/update.sh
 RUN chmod -v +x /usr/bin/update.sh
 
 # enable update script service
-RUN systemctl enable script.update
+RUN systemctl enable update.service
 
 # install app
 #############
