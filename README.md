@@ -149,6 +149,8 @@ ___
 
 [mdhiggins](https://github.com/mdhiggins) - MP4Automator script
 
+&nbsp;
+&nbsp;
 
 ___
 If you appreciate my work, then please consider buying me a beer  :D
