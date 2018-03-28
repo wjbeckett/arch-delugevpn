@@ -22,12 +22,27 @@ ADD run/nobody/*.py /home/nobody/
 # add pre-configured config files for deluge
 ADD config/nobody/ /home/nobody/
 
+# add startup file to update mp4automator at boot
+ADD run/root/script.update /etc/systemd/system/
+
+# add update script
+ADD /run/init/update.sh /usr/bin/update.sh
+
+# set permissions on update script
+RUN chmod -v +x /usr/bin/update.sh
+
+# enable update script service
+RUN sudo systemctl enable script.update
+
 # install app
 #############
 
 # make executable and run bash scripts to install app
 RUN chmod +x /root/*.sh /home/nobody/*.sh /home/nobody/*.py && \
 	/bin/bash /root/install.sh
+
+#Set mp4automator script file permissions
+RUN chmod 775 -R /mp4automator
 
 # docker settings
 #################
@@ -37,6 +52,9 @@ VOLUME /config
 
 # map /data to host defined data path (used to store data from app)
 VOLUME /data
+
+# map /mp4automator to host defined mp4automator path (used to store mp4automator config)
+VOLUME /mp4automator
 
 # expose port for deluge webui
 EXPOSE 8112
