@@ -3,6 +3,7 @@
 [Deluge website](http://deluge-torrent.org/)  
 [OpenVPN website](https://openvpn.net/)  
 [Privoxy website](http://www.privoxy.org/)
+[MP4automator website](https://github.com/mdhiggins/sickbeard_mp4_automator)
 
 **Description**
 
@@ -25,6 +26,7 @@ docker run -d \
     --name=<container name> \
     -v <path for data files>:/data \
     -v <path for config files>:/config \
+    -v <path for mp4Automator files>:/mp4automator \
     -v /etc/localtime:/etc/localtime:ro \
     -e VPN_ENABLED=<yes|no> \
     -e VPN_USER=<vpn username> \
@@ -53,6 +55,10 @@ Default password for the webui is "deluge"
 **Access Privoxy**
 
 `http://<host ip>:8118`
+
+**MP4Automator configuration**
+Start and then stop the container so MP4Automator config files are generated and then follow the config instructions from https://github.com/mdhiggins/sickbeard_mp4_automator/blob/master/README.md
+
 
 **PIA provider**
 
