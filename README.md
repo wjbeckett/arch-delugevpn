@@ -41,7 +41,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<UID for user> \
     -e PGID=<GID for user> \
-    binhex/arch-delugevpn
+    wjbeckett/arch-delugevpnmp4
 ```
 &nbsp;
 Please replace all user variables in the above command defined by <> with the correct values.
@@ -88,7 +88,7 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-delugevpn
+    wjbeckett/arch-delugevpnmp4
 ```
 &nbsp;
 **AirVPN provider**
@@ -123,7 +123,7 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-delugevpn
+    wjbeckett/arch-delugevpnmp4
 ```
 &nbsp;
 **Notes**
