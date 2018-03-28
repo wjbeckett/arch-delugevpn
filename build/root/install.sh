@@ -13,7 +13,7 @@ source /root/custom.sh
 ####
 
 # define pacman packages
-pacman_packages="pygtk python2-service-identity python2-mako python2-notify gnu-netcat ipcalc base-devel python libffi musl gcc openssl ffmpeg python-setuptools python-pip git"
+pacman_packages="pygtk python2-service-identity python2-mako python2-notify gnu-netcat ipcalc python libffi musl gcc openssl ffmpeg python-setuptools python-pip git"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -24,7 +24,7 @@ fi
 pip install --upgrade PIP
 
 # define PIP packages
-pip_packages="requests requests[security] requests-cache babelfish 'guessit<2' 'subliminal<2' stevedore==1.19.1 qtfaststart deluge-client gevent"
+pip_packages="requests requests[security] requests-cache babelfish guessit<2 subliminal<2 stevedore==1.19.1 qtfaststart deluge-client gevent"
 
 # install pip packages using pip install
 if [[ ! -z "${pip_packages}" ]]; then
