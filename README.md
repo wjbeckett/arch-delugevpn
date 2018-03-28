@@ -144,7 +144,9 @@ User ID (PUID) and Group ID (PGID) can be found by issuing the following command
 
 ___
 **Credits**
+
 [binbex](https://github.com/binhex) - arch-delugevpn contianer
+
 [mdhiggins](https://github.com/mdhiggins) - MP4Automator script
 
 
