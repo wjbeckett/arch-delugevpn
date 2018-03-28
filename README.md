@@ -1,8 +1,3 @@
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/mashape/kong.svg?style=for-the-badge)](https://hub.docker.com/r/wjbeckett/arch-delugevpnmp4/)
-[![Docker Stars](https://img.shields.io/docker/stars/_/ubuntu.svg?style=for-the-badge)](https://hub.docker.com/r/wjbeckett/arch-delugevpnmp4/)       
-___
-
 **Application**
 
 [Deluge website](http://deluge-torrent.org/)  
