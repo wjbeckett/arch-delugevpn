@@ -23,7 +23,7 @@ ADD run/nobody/*.py /home/nobody/
 ADD config/nobody/ /home/nobody/
 
 # add startup file to update mp4automator at boot
-ADD run/root/script.update /etc/systemd/system/
+ADD run/root/update.service /etc/systemd/system/
 
 # add update script
 ADD /run/init/update.sh /usr/bin/update.sh
