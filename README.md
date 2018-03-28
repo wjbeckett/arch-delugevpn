@@ -1,3 +1,10 @@
+
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?style=for-the-badge)](https://registry.hub.docker.com/v2/repositories/wjbeckett/arch-delugevpnmp4/)
+[![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg?style=for-the-badge)](https://registry.hub.docker.com/v2/repositories/wjbeckett/arch-delugevpnmp4/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/mashape/kong.svg?style=for-the-badge)](https://registry.hub.docker.com/v2/repositories/wjbeckett/arch-delugevpnmp4/)
+[![Docker Stars](https://img.shields.io/docker/stars/_/ubuntu.svg?style=for-the-badge)](https://registry.hub.docker.com/v2/repositories/wjbeckett/arch-delugevpnmp4/)       
+___
+
 **Application**
 
 [Deluge website](http://deluge-torrent.org/)  
