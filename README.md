@@ -2,7 +2,7 @@
 
 [Deluge website](http://deluge-torrent.org/)  
 [OpenVPN website](https://openvpn.net/)  
-[Privoxy website](http://www.privoxy.org/)
+[Privoxy website](http://www.privoxy.org/)  
 [MP4automator website](https://github.com/mdhiggins/sickbeard_mp4_automator)
 
 **Description**
