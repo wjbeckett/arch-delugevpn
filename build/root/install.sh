@@ -20,18 +20,15 @@ if [[ ! -z "${pacman_packages}" ]]; then
 	pacman -S --needed $pacman_packages --noconfirm
 fi
 
-# use python2 as default when calling python from scripts
-ln -sf /usr/bin/python2 /usr/bin/python
-
 # update python pip
-pip install --upgrade PIP
+pip2 install --upgrade PIP
 
 # define PIP packages
 pip_packages="requests requests[security] requests-cache babelfish guessit<2 subliminal<2 stevedore==1.19.1 qtfaststart deluge-client gevent"
 
 # install pip packages using pip install
 if [[ ! -z "${pip_packages}" ]]; then
-	pip install $pip_packages
+	pip2 install $pip_packages
 fi
 
 # clone mp4automator
@@ -63,6 +60,9 @@ mkdir -p /home/nobody/.cache/Python-Eggs
 
 # remove permissions for group and other from the Python-Eggs folder
 chmod -R 700 /home/nobody/.cache/Python-Eggs
+
+# use python2 as default when calling python from scripts
+ln -sf /usr/bin/python2 /usr/bin/python
 
 # container perms
 ####
