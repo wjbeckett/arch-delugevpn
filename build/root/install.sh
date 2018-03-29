@@ -20,6 +20,9 @@ if [[ ! -z "${pacman_packages}" ]]; then
 	pacman -S --needed $pacman_packages --noconfirm
 fi
 
+# use python2 as default when calling python from scripts
+ln -sf /usr/bin/python2 /usr/bin/python
+
 # update python pip
 pip install --upgrade PIP
 
@@ -60,9 +63,6 @@ mkdir -p /home/nobody/.cache/Python-Eggs
 
 # remove permissions for group and other from the Python-Eggs folder
 chmod -R 700 /home/nobody/.cache/Python-Eggs
-
-# use python2 as default when calling python from scripts
-ln -sf /usr/bin/python2 /usr/bin/python
 
 # container perms
 ####
