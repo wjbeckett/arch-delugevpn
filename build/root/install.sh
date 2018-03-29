@@ -20,17 +20,6 @@ if [[ ! -z "${pacman_packages}" ]]; then
 	pacman -S --needed $pacman_packages --noconfirm
 fi
 
-# update python pip
-pip2 install --upgrade PIP
-
-# define PIP packages
-pip2_packages="requests requests[security] requests-cache babelfish guessit<2 subliminal<2 stevedore==1.19.1 qtfaststart deluge-client gevent"
-
-# install pip packages using pip install
-if [[ ! -z "${pip_packages}" ]]; then
-	pip2 install $pip2_packages
-fi
-
 # clone mp4automator
 git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /mp4automator
 
