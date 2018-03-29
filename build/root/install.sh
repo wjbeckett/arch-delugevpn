@@ -61,6 +61,9 @@ mkdir -p /home/nobody/.cache/Python-Eggs
 # remove permissions for group and other from the Python-Eggs folder
 chmod -R 700 /home/nobody/.cache/Python-Eggs
 
+# use python2 as default when calling python from scripts
+ln -sf /usr/bin/python2 /usr/bin/python
+
 # container perms
 ####
 
