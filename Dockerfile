@@ -41,9 +41,6 @@ RUN systemctl enable update.service
 RUN chmod +x /root/*.sh /home/nobody/*.sh /home/nobody/*.py && \
 	/bin/bash /root/install.sh
 
-# run pip package install
-RUN /bin/bash /root/pip.sh
-
 #Set mp4automator script file permissions
 RUN chmod 775 -R /mp4automator
 

@@ -23,10 +23,6 @@ fi
 # clone mp4automator
 git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /mp4automator
 
-
-# call custom pip install script
-source /root/pip.sh
-
 # aor packages
 ####
 
@@ -56,6 +52,20 @@ chmod -R 700 /home/nobody/.cache/Python-Eggs
 
 # use python2 as default when calling python from scripts
 ln -sf /usr/bin/python2 /usr/bin/python
+
+#install python2-pip
+pacman -S python2-pip --noconfirm
+
+# upgrade pip
+pip2 install --upgrade pip
+
+# define pip packages
+pip_packages="requests requests[security] requests-cache babelfish guessit<2 subliminal<2 stevedore==1.19.1 qtfaststart deluge-client gevent"
+
+# install pip packages
+if [[ ! -z "${pip_packages}" ]]; then
+	pip2 install $pip_packages
+fi
 
 # container perms
 ####
