@@ -13,7 +13,7 @@ source /root/custom.sh
 ####
 
 # define pacman packages
-pacman_packages="pygtk python2-service-identity python2-mako python2-notify gnu-netcat ipcalc python2 libffi musl gcc openssl ffmpeg python2-setuptools python2-pip git"
+pacman_packages="pygtk python2-service-identity python2-mako python2-notify gnu-netcat ipcalc python2 libffi musl gcc openssl ffmpeg python2-setuptools git"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -22,6 +22,10 @@ fi
 
 # clone mp4automator
 git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /mp4automator
+
+
+# call custom pip install script
+source /root/pip.sh
 
 # aor packages
 ####
