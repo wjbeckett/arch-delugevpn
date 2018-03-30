@@ -25,7 +25,7 @@ docker run -d \
     -p 58846:58846 \
     -p 58946:58946 \
     --name=<container name> \
-    -v <path for data files>:/data \
+    -v <path for data files>:/downloads \
     -v <path for config files>:/config \
     -v <path for mp4Automator files>:/mp4automator \
     -v /etc/localtime:/etc/localtime:ro \
@@ -75,7 +75,7 @@ docker run -d \
     -p 58846:58846 \
     -p 58946:58946 \
     --name=delugevpn \
-    -v /apps/docker/deluge/data:/data \
+    -v /apps/docker/deluge/downloads:/downloads \
     -v /apps/docker/deluge/config:/config \
     -v /etc/localtime:/etc/localtime:ro \
     -e VPN_ENABLED=yes \
@@ -113,7 +113,7 @@ docker run -d \
     -p 58846:58846 \
     -p 58946:58946 \
     --name=delugevpn \
-    -v /apps/docker/deluge/data:/data \
+    -v /apps/docker/deluge/downloads:/downloads \
     -v /apps/docker/deluge/config:/config \
     -v /etc/localtime:/etc/localtime:ro \
     -e VPN_ENABLED=yes \

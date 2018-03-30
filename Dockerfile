@@ -50,8 +50,8 @@ RUN chmod 775 -R /mp4automator
 # map /config to host defined config path (used to store configuration from app)
 VOLUME /config
 
-# map /data to host defined data path (used to store data from app)
-VOLUME /data
+# map /downloads to host defined data path (used to store data from app)
+VOLUME /downloads
 
 # map /mp4automator to host defined mp4automator path (used to store mp4automator config)
 VOLUME /mp4automator
